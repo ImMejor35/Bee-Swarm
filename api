@@ -1,0 +1,8 @@
+    local stuff = {}
+    function stuff.MaxPollen()
+        return tonumber(game.Players.LocalPlayer.Character:FindFirstChild("ProgressLabel",true).Text:match("%d+$"))
+    end
+    function stuff.Pollen()
+        return tonumber(game.Players.LocalPlayer.Character:FindFirstChild("ProgressLabel",true).Text:match("%d+"))
+    end
+    return stuff
